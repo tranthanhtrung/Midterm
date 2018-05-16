@@ -1,4 +1,5 @@
 ﻿using MidTerm.DAO;
+using MidTerm.DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -22,6 +23,21 @@ namespace MidTerm.BUS
             {
                 throw ex;
             }
+        }
+        public QuanTri LayThongTinMotNhanVien(string user)
+        {
+            return quanTriDAO.LayThongTinMotNhanVien(user);
+        }
+
+        public int CheckSignIn(string user, string pas)
+        {
+            QuanTri qt = new QuanTri();
+            qt = LayThongTinMotNhanVien(user);
+            if(qt.password == pas)
+            {
+                return qt.capBac;
+            }
+            else return 0;
         }
     }
 }

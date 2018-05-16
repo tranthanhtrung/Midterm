@@ -32,6 +32,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaoCao));
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.loaiPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.doanhThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tyLe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -53,9 +56,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.loaiPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.doanhThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tyLe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -102,6 +102,21 @@
             this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(612, 278);
             this.bunifuCustomDataGrid1.TabIndex = 0;
             // 
+            // loaiPhong
+            // 
+            this.loaiPhong.HeaderText = "Loại phòng";
+            this.loaiPhong.Name = "loaiPhong";
+            // 
+            // doanhThu
+            // 
+            this.doanhThu.HeaderText = "Doanh thu";
+            this.doanhThu.Name = "doanhThu";
+            // 
+            // tyLe
+            // 
+            this.tyLe.HeaderText = "Tỷ lệ";
+            this.tyLe.Name = "tyLe";
+            // 
             // bunifuThinButton21
             // 
             this.bunifuThinButton21.ActiveBorderThickness = 1;
@@ -121,7 +136,7 @@
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
             this.bunifuThinButton21.Location = new System.Drawing.Point(495, 28);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(99, 34);
             this.bunifuThinButton21.TabIndex = 5;
@@ -493,21 +508,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 454);
             this.panel1.TabIndex = 32;
-            // 
-            // loaiPhong
-            // 
-            this.loaiPhong.HeaderText = "Loại phòng";
-            this.loaiPhong.Name = "loaiPhong";
-            // 
-            // doanhThu
-            // 
-            this.doanhThu.HeaderText = "Doanh thu";
-            this.doanhThu.Name = "doanhThu";
-            // 
-            // tyLe
-            // 
-            this.tyLe.HeaderText = "Tỷ lệ";
-            this.tyLe.Name = "tyLe";
             // 
             // BaoCao
             // 

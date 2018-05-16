@@ -49,6 +49,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\LoaiPhongBUS.cs" />
+    <Compile Include="BUS\PhieuThueBUS.cs" />
+    <Compile Include="BUS\QuanTriBUS.cs" />
+    <Compile Include="DAO\LoaiPhongDAO.cs" />
+    <Compile Include="DAO\PhieuThueDAO.cs" />
+    <Compile Include="DAO\QuanTriDAO.cs" />
+    <Compile Include="DAO\XL_DULIEU.cs" />
+    <Compile Include="DTO\LoaiPhong.cs" />
+    <Compile Include="DTO\PhieuThue.cs" />
+    <Compile Include="DTO\QuanTri.cs" />
     <Compile Include="GUI\NhanVien\DanhMucPhong.cs">
       <SubType>Form</SubType>
     </Compile>

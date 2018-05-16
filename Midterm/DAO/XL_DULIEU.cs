@@ -10,8 +10,7 @@ namespace MidTerm.DAO
 {
     class XL_DULIEU
     {
-        string duong_dan = @"Data Source=DESKTOP-GN3V8MM\SQLEXPRESS;Initial Catalog=QuanLyKhachSan;Integrated Security=True;MultipleActiveResultSets=true";
-
+        string duong_dan = @"Data Source=DESKTOP-BSMAOJ9;Initial Catalog=QuanLyKhachSan;Integrated Security=True";
         public DataTable LayDuLieu(string sql)
         {
             try
@@ -43,5 +42,6 @@ namespace MidTerm.DAO
 
             return kq;
         }
+       
     }
 }
