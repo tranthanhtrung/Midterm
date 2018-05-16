@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MidTerm.BUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,15 +18,16 @@ namespace MidTerm
             InitializeComponent();
         }
 
-       
+        private void QuanLyNhanVien_Load(object sender, EventArgs e)
+        {
+            QuanTriBUS quanTriBUS = new QuanTriBUS();
 
+            bunifuCustomDataGrid1.DataSource = quanTriBUS.LayDanhSachNhanVien();
+        }
 
-        
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
 
-       
-
-       
-
-       
+        }
     }
 }

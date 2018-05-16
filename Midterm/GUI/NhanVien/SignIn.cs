@@ -17,26 +17,22 @@ namespace MidTerm
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void SignIn_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void bunifuThinButton21_Click_1(object sender, EventArgs e)
         {
+            var user = bunifuMetroTextbox1.Text;
+            var pas = bunifuMetroTextbox1.Text;
+            bool check;
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void bunifuMetroTextbox1_OnValueChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void bunifuThinButton21_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Home Menu = new Home();
-            Menu.Show();
         }
     }
 }

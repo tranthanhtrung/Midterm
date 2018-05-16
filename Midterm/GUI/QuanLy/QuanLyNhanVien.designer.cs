@@ -391,7 +391,7 @@
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.Location = new System.Drawing.Point(495, 56);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(99, 34);
             this.bunifuThinButton21.TabIndex = 5;
@@ -416,7 +416,7 @@
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(83)))), ((int)(((byte)(79)))));
             this.bunifuThinButton23.Location = new System.Drawing.Point(543, 14);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
             this.bunifuThinButton23.Size = new System.Drawing.Size(86, 34);
             this.bunifuThinButton23.TabIndex = 16;
@@ -441,11 +441,12 @@
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
             this.bunifuThinButton22.Location = new System.Drawing.Point(449, 14);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(86, 34);
             this.bunifuThinButton22.TabIndex = 15;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // bunifuMetroTextbox1
             // 
@@ -524,31 +525,37 @@
             // 
             // cmnd
             // 
+            this.cmnd.DataPropertyName = "cmnd";
             this.cmnd.HeaderText = "CMND";
             this.cmnd.Name = "cmnd";
             // 
             // ten
             // 
+            this.ten.DataPropertyName = "ten";
             this.ten.HeaderText = "Họ và tên";
             this.ten.Name = "ten";
             // 
             // sdt
             // 
+            this.sdt.DataPropertyName = "sdt";
             this.sdt.HeaderText = "SĐT";
             this.sdt.Name = "sdt";
             // 
             // diaChi
             // 
+            this.diaChi.DataPropertyName = "diaChi";
             this.diaChi.HeaderText = "Địa chỉ";
             this.diaChi.Name = "diaChi";
             // 
             // gioiTinh
             // 
+            this.gioiTinh.DataPropertyName = "gioiTinh";
             this.gioiTinh.HeaderText = "Giới tính";
             this.gioiTinh.Name = "gioiTinh";
             // 
             // capBac
             // 
+            this.capBac.DataPropertyName = "capBac";
             this.capBac.HeaderText = "Cấp bậc";
             this.capBac.Name = "capBac";
             // 
@@ -565,6 +572,7 @@
             this.Name = "QuanLyNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanLyNhanVien";
+            this.Load += new System.EventHandler(this.QuanLyNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).EndInit();
